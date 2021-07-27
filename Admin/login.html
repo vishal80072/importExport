@@ -1,0 +1,97 @@
+<html>
+<head>
+  <title>
+    Admin Login
+  </title>
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Merienda:700');
+    #login{
+        display: inline-block;
+        font-size: 35;
+        font-style:bold;
+        margin-top: 50px; 
+       font-family: 'Merienda', cursive;
+    }
+      #Mobile{
+          display: inline-block;
+          font-size: 40;
+          
+      }
+      #wrapper{
+          display:inline-block;
+          background-color:darkcyan;
+          margin-top:50px;
+          border-bottom:10px groove green;
+        border-top:10px groove green;
+      }
+      
+      hr{
+    border-color:#FFF93C;
+    border-style:groove;
+}
+  </style>
+    <script>
+        var x= Math.floor((Math.random() * 9999) + 1000);
+        function check(n)
+        {
+            
+            if(isNaN(n))
+                {
+                    alert("please input a number.")
+                }
+        }
+        function visible()
+        {
+            alert(x);
+            var val=document.getElementById('mob').value;
+            if(val=="")
+                {
+                    alert("please enter the mobile number ");
+                    document.getElementById('otp').style.display="none";
+                }
+            else{
+            document.getElementById('otp').style.display="inline";
+                document.getElementById('button').style.display="none";
+                document.getElementById('button1').style.display="inline";
+            }
+        }
+        function checkOTP(){
+            if(x==document.getElementById('o').value)
+            {
+                alert("otp is correct");
+                window.location='index2.html';
+            }
+            else{
+                alert("wrong otp");document.getElementById('o').value=""; }
+        }
+    </script>
+</head>
+<body bgcolor="	#5F9EA0">
+    <center>
+        <div id="wrapper">
+            
+    <div id="login" style="margin-left:10px;margin-right:10px;">
+        vishal Import Export <br>pvt ltd.
+        <hr>
+        LogIn (Admin) 
+        <hr>
+    </div>
+    <table cellspacing="10px"><br><br>
+    <div id="Mobile">
+    <tr>
+        <td><b>Mobile N0</b></td>
+        <td><input type="text" placeholder="Mobile no" name="Mobile no"required minlength="10" maxlength="10" onkeyup="check(this.value)" id="mob"></td>
+    </tr>
+        </div>
+    </table>
+            <div id="otp" style="display:none;" >
+                <b>OTP :</b> <input type="text" style="width:50px;" onkeyup="check(this.value)" maxlength="4" minlength="4" required id="o"> <br> <br>
+            </div>
+            <input type="button" style="display:inline-block; width:200px; height:50px;font-size:20; background-color:green; border-radius:10px;" onclick="visible();" id="button" value="send OTP">
+            <input type="button" style="display:none; width:200px; height:50px;font-size:20; background-color:green; border-radius:10px;" onclick="checkOTP();" id="button1" value="Check OTP">
+            <br><br>
+            </div>
+    </center>
+</body>
+</html>
+    

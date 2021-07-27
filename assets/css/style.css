@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
+
+hr{
+    border-color:#FFF93C;
+    border-style:groove;
+}
+a{
+    text-decoration:none;
+    font-size:15;
+}
+option{
+    background-color:burlywood;
+    font-size: 20;
+}
+#select_mob{
+    width:70px;   
+}
+select{
+    width:200px;
+    border-color:blueviolet;
+}
+input[type=submit],input[type=button]{
+  background-color: #4CAF50;
+  text-align:top;
+  display: inline-block;
+  font-size: 20px;
+  border-radius:10px;  
+width:100px;
+    
+}
+input,select{
+    border:2px solid green;
+    border-bottom-color:yellow;
+    border-radius:10px;
+    height:40px;
+    text-decoration-style: double;
+    font-size: 18;
+    
+}
+body{
+    background-image:url("../../images/back.jpg");
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+    opacity:1.0
+    
+}
+#wrapper{
+    background-color:rgba(255,255,255,0.3);
+   transition-property: all;
+   text-decoration-style:solid;
+    display:inline-block;
+    padding:10px;
+    overflow:visible;
+    position:static;
+    border:10px groove chocolate;
+    align-self:center;
+    margin-top:60px;
+    border-top-left-radius:50px;
+    border-bottom-right-radius:50px;
+    border-top-color:white;
+    border-left-color:white;
+    color:white;
+    box-shadow:10px 10px silver;
+   font-weight:bolder;
+}
+
+#login-content{
+    padding:10px;
+    align-content:space-between;
+    float:left;
+    border-radius:10px;
+   
+    
+}
+
+::placeholder{
+    font-style:italic;   
+}

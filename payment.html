@@ -1,0 +1,245 @@
+<html>
+    <head>
+        <Title>Welcome to Vishal Import Export pvt ltd. Beginning with professional Business </Title>
+        <link rel="stylesheet" href="assets/css/index-css.css">
+        <style>
+        @import url('https://fonts.googleapis.com/css?family=Merriweather');
+            @import url('https://fonts.googleapis.com/css?family=PT+Serif:400');
+            table{
+                width:500px;
+            }
+        </style>
+        <script src="assets/js/project.js"></script>
+    </head>
+    <body link="balck" alink="black" vlink="black" onload="disableClick()">
+        <!--Header Starts Here -->
+        <header>
+            <div id='header'>
+                <div id='header-logo'>
+                    <a href="index.html"><img src="images/logo.png" width="100px" height="100"></a>
+                </div>
+                <div id="header-title">
+                    <font style="font-family: 'Nanum Myeongjo', serif; font-size:30; text-shadow:2px 2px #0F7CB2; margin:0;"><h3><marquee direction="right" behavior="alternate" scrollamount="2">Vishal Import/Export pvt ltd</marquee></h3></font>
+                </div>
+                <div id="header-search">
+                    <input typ="text" name="search"style="width:370; height:30px;">
+                    <div id="search-button">
+                    <img src="images/search.png" width="30px" height="30px">
+                    </div>
+                </div>
+                <div id="social-media">
+						<span style="right:0; top:0; margin-left:630px; font-size:20; word-spacing:2px; letter-spacing:2px;" width="300px" height="10px"><u>Visit us on</u></span>
+						
+                        <a href="http://twitter.com" target="_blank"><img src="images/twitter.png" class='btn' alt="www.twitter.com"></a>
+                       <a href="https://www.instagram.com/vishalsurgade/" target="_blank"><img src="images/instagram.png" class='btn'alt="www.instagram.com" ></a>
+                        <a href="https://www.facebook.com/vishal.surgade" target="_blank"><img src="images/facebook.png" class='btn' alt="www.facebook.com"></a>
+						
+				</div>
+            </div>
+        </header><!-- Header Ends Here -->
+        <!--Navigation part -->
+        
+        <nav id="navigation">
+            <center>
+            <ul class="nav">
+                <li class="list"><a href="index.html">Home</a></li>
+                <li class="list"><a href="messages.html">Contact</a></li>
+                <li class="list"><a href="area.html">Area</a></li>
+                <li class="list"><a href="#">Profile</a></li>
+                <li class="list"><a href="help.html">Help</a></li>
+                <li class="list"><a href="login.html">Log In</a></li>
+                <li class="list"><a href="admin/login.html">Admin</a></li>
+                <li class="list"style="position:fixed;margin-left:560px;margin-top:10px;"><a href="#" onclick="cart()">Cart</a></li>
+                </ul>
+                </center>
+                
+            
+        </nav>
+        
+        <div class="content-pane" style="width:99%;">
+            <div style="background-color:antiquewhite; width:100%;margin-top:10px;position:static;display:block;"><u><h4  style="margin-left:10px; font-family: 'Merriweather', serif;">Powered by <i>vishal co. pvt ltd - India </i></h4></u> </div>
+            <div id="details">
+                
+                                    <style type="text/css">
+dd { margin-left: 75px; }
+#ode_margin { margin-left: 0px; }
+</style>
+  
+    <fieldset class="paymethodfieldset">
+        <table >
+        <dl> 
+        <dt>Client Number</dt>
+        <dd>
+            <input id="client_no" type="text" name="client_no" value="" size="30"/>
+        </dd>
+        <dt id>Mode</dt>
+        <dd id=Debitmargin>
+            <span style="color:#999">&nbsp;&nbsp;</span><input id="mode" type="text" name="mode" value="" size="30"/>            
+        </dd>            
+        <dt>Session ID </dt>            
+        <dd>
+            <input id="inSessionID" name="inSessionID" type="text" value="" size="30"/>
+        
+        </dd>                            
+        <dt>Collection Amount</dt>                    
+        <dd>
+
+            <input id="collection_amount" type="text" name="collection_amount" size="30"/>            
+        </dd>                      
+        <div>
+            <h2>         
+                <input type=radio name=formOfPayment id=formOfPayment value=CreditCard />
+                    Pay by Debit Card</h2>            
+        </div>     
+        
+        <dt>Card Number</dt>
+        <dd>
+            <input type="text" id="cc_no" name="cc_no" value="4111111111111111"/>
+            <span id="err_cc_no" class="jserror"> </span>
+        </dd>           
+        <dt>Expiry Date</dt>
+        <dd>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td><select id="cc_exp_mm" name="cc_exp_mm">
+                            <option value="">Month</option>
+                            <option value="1" selected="selected">January</option>                                
+                            <option value="2">February</option>                             
+                            <option value="3">March</option>                          
+                            <option value="4">April</option>                          
+                            <option value="5">May</option>                           
+                            <option value="6">June</option>                           
+                            <option value="7">July</option>                       
+                            <option value="8">August</option>                            
+                            <option value="9">September</option>                    
+                            <option value="10">October</option>                             
+                            <option value="11">November</option>                            
+                            <option value="12">December</option>                            
+                        </select></td>                        
+                    <td width="20">&nbsp;</td>                        
+                    <td><select id="cc_exp_yyyy" name="cc_exp_yyyy">
+<option value="">Month</option>
+                            <option value="2016" selected="selected">2016</option>                                
+                            <option value="2017">2017</option>                             
+                            <option value="2018">2018</option>                          
+                            <option value="2019">2019</option>                          
+                            <option value="2020">2020</option>                           
+                            <option value="2021">2021</option>                           
+                            <option value="2022">2022</option>                          
+                            <option value="2023">2023</option>                            
+                            <option value="2024">2024</option>                    
+                            <option value="2025">2025</option>                             
+                            <option value="2026">2026</option>                            
+                            <option value="2027">2027</option>
+<option value="2028">2028</option>                            
+                            <option value="2029">2029</option>
+<option value="2030">2030</option>
+                        </select>                        
+                    </td>                    
+                </tr>                
+            </table>          
+        </dd>
+
+        <dt>Security Code</dt>
+        <dd>
+            <input id="cvv" type="text" size="5" name="cvv" value="111"/>
+        </dd>
+        </dl>    
+</fieldset>    
+<fieldset >
+    </table>
+    <div>
+            <h2>         
+                <input type=radio name=formOfPayment id=formOfPayment value=CreditCard />
+                    Pay by Credit Card</h2>            
+        </div>     
+        
+        <dt>Card Number</dt>
+        <dd>
+            <input type="text" id="cc_no" name="cc_no" value="4111111111111111"/>
+            <span id="err_cc_no" class="jserror"> </span>
+        </dd>           
+        <dt>Expiry Date</dt>
+        <dd>
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td><select id="cc_exp_mm" name="cc_exp_mm">
+                            <option value="">Month</option>
+                            <option value="1" selected="selected">January</option>                                
+                            <option value="2">February</option>                             
+                            <option value="3">March</option>                          
+                            <option value="4">April</option>                          
+                            <option value="5">May</option>                           
+                            <option value="6">June</option>                           
+                            <option value="7">July</option>                       
+                            <option value="8">August</option>                            
+                            <option value="9">September</option>                    
+                            <option value="10">October</option>                             
+                            <option value="11">November</option>                            
+                            <option value="12">December</option>                            
+                        </select></td>                        
+                    <td width="20">&nbsp;</td>                        
+                    <td><select id="cc_exp_yyyy" name="cc_exp_yyyy">
+<option value="">Month</option>
+                            <option value="2016" selected="selected">2016</option>                                
+                            <option value="2017">2017</option>                             
+                            <option value="2018">2018</option>                          
+                            <option value="2019">2019</option>                          
+                            <option value="2020">2020</option>                           
+                            <option value="2021">2021</option>                           
+                            <option value="2022">2022</option>                          
+                            <option value="2023">2023</option>                            
+                            <option value="2024">2024</option>                    
+                            <option value="2025">2025</option>                             
+                            <option value="2026">2026</option>                            
+                            <option value="2027">2027</option>
+<option value="2028">2028</option>                            
+                            <option value="2029">2029</option>
+<option value="2030">2030</option>
+                        </select>                        
+                    </td>                    
+                </tr>                
+            </table>          
+        </dd>
+
+        <dt>Security Code</dt>
+        <dd>
+            <input id="cvv" type="text" size="5" name="cvv" value="111"/>
+        </dd>
+        </dl>    
+</fieldset>    
+
+<fieldset>       
+   <dl>            
+
+                       
+          <center>  <button class="button" style="width:100px;height:50px"> Proceed to Pay </button> </center>           
+               
+    </dl>    
+</fieldset>
+
+</form>
+</div>
+            
+            <div id="images">
+                <div style="background-color:aquamarine;margin-top:20px;"><center>
+                <button  class="button">Suppliers</button>
+                <button class="button" onclick="window.location='admin/payment.html';">Buy Now</button>
+                <button class="button">Add to cart</button>
+                    </center>
+                </div>
+                <img src="images/products/electronics/moniter1.png"width="350" height="250">
+                <hr>
+                <img src="images/products/electronics/moniter2.png" width="200px"height="150px" style="border-right:1px solid black; display:inline;">
+                <img src="images/products/electronics/moniter3.png" width="150px" height="150px">
+            </div>
+        </div>
+    </div>
+        <footer class="footer">
+            <center>vishal and Mahendra Production. </center>
+            <center>&copy; All rights are reserved.</center>
+            
+    
+        </footer>
+    </body>
+</html>

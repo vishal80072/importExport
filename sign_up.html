@@ -1,0 +1,90 @@
+<html>
+    <head>
+       <title>Vishal Import Export Pvt. lmt .</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/project.js"></script>
+    </head>
+    <body link="blue" text="black" vlink="blue">
+        <font face="verdana">
+        <center>
+        <div id="wrapper" width="150px" height="300px;">
+            <img src="images/logo.png" width="80px" height="80px"><br>
+            <label style="font-family: 'ZCOOL XiaoWei', serif; color:black;">Vishal Import Export</label>
+            <hr>
+            <div id="login-content" align="left"><hr>
+                <table cellspacing="2px" cellpadding="4px">
+                    <form action="login-check.html"  name="signup">
+                    <b><tr>
+                        <td>Name <font color="red">*</font></td>
+                        <td>:<input type="text" placeholder=" First name" size="25" autofocus required onkeyup="letteronly(this.value)" id="fname" ></td>
+                        <td><input type="text" placeholder=" Last name" size="25" required onblur="letteronly1(this.value)" id="lname"></td>
+                    </tr>
+                    <tr>
+                        <td>Password<font color="red">*</font></td>
+                        <td colspan="2">:<input type="password" placeholder=" password"size="10" maxlength="15" minlength="6" onkeydown="check(this.value.length)" id="p1" onfocusout="len(this.value.length)"required><img src="images/white.png" width="20px" height="20px" style="align-self:center;" id="check1">
+                            Confirm Password <font color="red">*</font>:<input type="password" placeholder=" password"size="10" maxlength="15" id="p2" onblur="Call()" required minlength="6"><img src="images/white.png" width="20px" height="20px"id="check2"/>
+                        </td>
+                    </tr>
+                        
+                    <tr>
+                        <td>Comany Name<font color="red">*</font> </td>
+                        <td colspan="2">:<input type="text" name="company "placeholder=" Comapny Name"required size="57"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile No <font color="red">*</font></td>
+                        <td colspan="2">:<select id="select_mob" >
+                                <option width="100px"> +91</option>
+                            </select><input type="tel" required placeholder="Mobile No" size="10" maxlength="10" minlength="10" name="mob" id="mob"onkeyup="checkInp()">
+                       &nbsp;&nbsp; DOB<font color="red"> *</font><input type="date" name="dob" id="bday" onblur="dobCheck()"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Comany Email <font color="red">*</font></td>
+                        <td colspan="2">:<input type="Email" placeholder="Company Email " required size="50"></td>
+                    </tr>
+                        <tr>
+                        <td>City <font color="red">*</font></td>
+                        <td>:<select>
+                            <option disabled > </option>
+                            <option disabled>Choose City</option>
+                            <option disabled>---------------------</option>
+                            <option value="Pune">Pune</option><option disabled>---------------------</option>
+                            <option value="Lonavala">Lonavala</option><option disabled>---------------------</option>
+                            <option value="khandala">khandala</option><option disabled>---------------------</option>
+                            <option value="lavasa">lavasa</option><option disabled>---------------------</option>
+                            <option value="Mulshi">Mulshi</option><option disabled>---------------------</option>
+                            <option value="Kamshet">Kamshet</option><option disabled>---------------------</option>
+                            <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option><option disabled>---------------------</option>
+                            <option value="Junnar">Junnar</option><option disabled>---------------------</option>
+                            <option value="Maval">Maval</option><option disabled>---------------------</option>
+                            <option value="Shirur">Shirur</option><option disabled>---------------------</option>
+                            
+                        </select>
+                            </td>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="4"><hr><a href="login-check.html"><input type="submit" value="Sign Up"></a>
+                        <input type="button" value="Back" onclick="window.location='index.html'">
+                        </th>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="4"> <hr width="250px"></th>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="4">
+                            
+                            <a href="login.html">Already have an account   ?</a><br><hr width="150px">
+                        </th>
+                    </tr>
+                        </b></form>
+                </table>
+            </div>
+        </div>
+        </center>
+            </font>
+        
+    </body>
+</html>
